@@ -1,4 +1,4 @@
-const debounce = (fn, ms) => {
+export const debounce = (fn, ms) => {
   let timeout;
   return function () {
     const fnCall = () => {fn.apply(this, arguments)}
@@ -9,4 +9,3 @@ const debounce = (fn, ms) => {
   }
 }
 
-export default debounce;
