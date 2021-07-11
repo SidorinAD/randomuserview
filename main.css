@@ -1,0 +1,103 @@
+/* Table css start */ 
+
+.table-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100vw;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 600px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+table th, td {
+  padding: 12px 15px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+img {
+  border-radius: 50%;
+}
+
+/* Table css end */ 
+
+/* Table search start */
+
+#search {
+  border: 2px solid #009879;
+  width: 894px;
+  height: 37px;
+  border-radius: 5px;
+  padding-left: 8px;
+}
+
+/* Table search end */
+
+/* Tooltip css start */ 
+
+.tooltip {
+  display: none;
+  position: absolute;
+}
+
+
+
+.table-image:hover .tooltip {
+  display: inline-block;
+}
+
+/* Tooltip css end */
+
+/* Loader css start */ 
+
+.loader {
+  width: 5rem;
+  height: 5rem;
+  border: 5px solid #f3f3f3;
+  border-top: 6px solid #9c41f2;
+  border-radius: 100%;
+  margin: auto;
+  visibility: hidden;
+  animation: spin 1s infinite linear;
+  position: absolute;
+}
+
+.loading.display {
+  visibility: visible;
+}
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+/* Loader css end */ 
+
