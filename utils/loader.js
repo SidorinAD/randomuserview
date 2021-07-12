@@ -1,5 +1,9 @@
 import { LOADER, TABLEHEAD, TABLESEARCH } from "../const/const.js";
 
+/*
+  functions to hide or display different elements of main page in process of downloading data from API
+
+*/
 const setLoaderVisibility = (isVisible) =>
   (LOADER.style.visibility = isVisible ? "visible" : "hidden");
 const setTableSearchVisibility = (isVisible) =>

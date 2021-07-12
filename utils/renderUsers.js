@@ -1,6 +1,10 @@
 import { getUserTableRow } from "../templates/getUserTableRow.js";
 import { TABLEDATA } from "../const/const.js";
 
+/*
+that function process data from Api and pass it to template functuion to render, 
+or return no results boilerplate if empty array received 
+*/
 export const renderUsers = (arr) => {
   if (arr.length === 0) {
     const noResultOutput = `
